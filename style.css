@@ -11,23 +11,39 @@ body {
     flex-direction: column;
 
   }
-  .ingredients {
+  .ingredientes {
     text-align: left;
     margin: 0 auto;
     max-width: 300px;
   }
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  .result {
-    margin-top: 20px;
+  
+  .resultado {
+    text-align: left;
+    max-width: 300px;
     font-weight: bold;
+    margin-top: 20px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
   }
 
   h1 {
         background: linear-gradient(45deg,rgb(158, 245, 238), rgb(50, 173, 165));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    background: linear-gradient(45deg,rgb(50, 173, 165), rgb(158, 245, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ingredientes {
+   color: rgb(158, 245, 238);
+  }
+
+  p {
+    color: rgb(158, 245, 238);
   }

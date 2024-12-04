@@ -9,43 +9,21 @@
 </head>
 <body>
   <h1>Selecionar Ingredientes</h1>
-  <div class="ingredients">
+  <div class="ingredientes">
     <label><input type="checkbox" value="Arroz"> Arroz</label><br>
     <label><input type="checkbox" value="Feijão"> Feijão</label><br>
     <label><input type="checkbox" value="Batata"> Batata</label><br>
     <label><input type="checkbox" value="Macarrão"> Macarrão</label><br>
     <label><input type="checkbox" value="Carne"> Carne</label><br>
   </div>
-  <button id="show-selected">Exibir Ingredientes Selecionados</button>
-  <p class="result" id="result"></p>
+  <div class="resultado">
 
-  <script>
-    // Captura elementos do HTML
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
-    const showSelectedBtn = document.getElementById('show-selected')
-    const resultDiv = document.getElementById('result')
+    <h2>Ingrdientes selecionados</h2>
+    <p id="resultado">Nenhum ingrediente selecionado.</p>
 
-    // Evento de clique no botão
-    showSelectedBtn.addEventListener('click', () => {
-      const selectedIngredients = [] // Array para armazenar os ingredientes selecionados
+  </div>
 
-      // Função nomeada para verificar checkboxes selecionados
-      function verificarCheckbox(checkbox) {
-        if (checkbox.checked) {
-          selectedIngredients.push(checkbox.value) // Adiciona o valor do checkbox ao array
-        }
-      }
+ <script src="script.js"></script>
 
-      // Verifica quais checkboxes estão marcados
-      checkboxes.forEach(verificarCheckbox)
-
-      // Atualiza o conteúdo da área de resultado
-      if (selectedIngredients.length > 0) {
-        resultDiv.textContent = `Ingredientes selecionados: ${selectedIngredients.join(', ')}`
-      } else {
-        resultDiv.textContent = 'Nenhum ingrediente selecionado.'
-      }
-    })
-  </script>
-</body>
+  
 </html>
